@@ -135,6 +135,9 @@ async function loadBlogPosts() {
           const blogSection = document.querySelector('.blog-posts');
           const originalContent = blogSection.innerHTML;
           
+          // Add class for full post display
+          blogSection.classList.add('showing-post');
+          
           blogSection.innerHTML = `
             <div class="blog-post full-post">
               <button class="back-button">← Back to posts</button>
@@ -144,6 +147,7 @@ async function loadBlogPosts() {
 
           // Add back button handler
           document.querySelector('.back-button').addEventListener('click', () => {
+            blogSection.classList.remove('showing-post');
             blogSection.innerHTML = originalContent;
             loadBlogPosts(); // Reload the post list
           });

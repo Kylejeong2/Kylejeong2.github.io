@@ -1,28 +1,20 @@
 {
   "posts": [
     {
-      "title": "Building AI Voice Agents",
-      "date": "2024-03-19",
-      "category": "AI",
-      "image": "./assets/phone.jpg",
-      "url": "blog/posts/ai-voice-agents.md",
-      "excerpt": "My journey building low-latency voice agents with interruption handling"
+      "title": "Why UCLA sent me a cease and desist (my first)",
+      "date": "2025-01-15",
+      "category": "Building",
+      "image": "./assets/fire.png",
+      "url": "blog/posts/westwood-fires.md",
+      "excerpt": "Trying to help people and promote VEST worked out well"
     },
     {
       "title": "Why I Started VEST @ UCLA",
-      "date": "2024-03-15",
-      "category": "Startups",
-      "image": "./assets/pictures/Headshot.png",
+      "date": "2024-12-15",
+      "category": "Community",
+      "image": "./assets/vest.png",
       "url": "blog/posts/vest-ucla.md",
       "excerpt": "Building the startup community at UCLA"
-    },
-    {
-      "title": "The Future of EMRs",
-      "date": "2024-03-10",
-      "category": "Healthcare",
-      "image": "./assets/overlap.png",
-      "url": "blog/posts/emr-future.md",
-      "excerpt": "How AI will transform healthcare data entry"
     }
   ]
 } 
