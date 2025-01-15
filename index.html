@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -145,9 +148,9 @@
             <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
-          <!-- <li class="navbar-item">
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
+          </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -167,7 +170,7 @@
 
         <section class="about-text">
           <p>
-            Hello, my name is Kyle. I am 19 years old and I currently live in the Bay Area. 
+            Hello, my name is Kyle. I am 20 years old and I currently live in the Bay Area. 
             I am a student at UCLA studying Math and CS and looking to become a software engineer / start my own startup. 
             I am interested in full stack development and artificial intelligence, and my favorite language is Python. 
             Feel free to contact me for resume or work.
@@ -206,9 +209,9 @@
 
             <li class="service-item">
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Better Rest API </h4>
+                <h4 class="h4 service-item-title">AI Web Agents</h4>
                 <p class="service-item-text">
-                  I'm never able to run a cURL first try. AI can make it easier.
+                  AI agents need the internet to be useful.
                 </p>
               </div>
 
@@ -317,10 +320,22 @@
               <h4 class="h4 timeline-item-title">Founder</h4>
               <span class="h4 timeline-item-title" style="color: white;">Graham</span>
 
-              <span>2024</span>
+              <span>2025</span>
 
               <p class="timeline-text">
-                Building AI phone agents to help small businesses.
+                coming soon.
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Founder, President</h4>
+              <span class="h4 timeline-item-title" style="color: white;">VEST @ UCLA</span>
+
+              <span>2024-Present</span>
+
+              <p class="timeline-text">
+                Building the startup/builder community for UCLA.
               </p>
 
             </li>
@@ -337,6 +352,19 @@
               </p>
 
             </li>
+
+            <!-- <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+              <span class="h4 timeline-item-title" style="color: white;">Foundation AI</span>
+
+              <span>Winter 2025</span>
+
+              <p class="timeline-text">
+                Building 
+              </p>
+
+            </li> -->
 
             <li class="timeline-item">
 
@@ -434,6 +462,76 @@
           </div>
 
           <ul class="project-list">
+            <li class="project-item  active" data-filter-item>
+              <a href="https://github.com/Kylejeong2/UCLA-Wildfires" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/fire.png" alt="fire" loading="lazy" style="max-height: 150px; object-fit: cover;">
+                </figure>
+
+                <h3 class="project-title">Westwood Wildfires</h3>
+
+                <p class="project-category">Realtime Dashboard to see LA Wildfires</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item>
+              <a href="https://github.com/Kylejeong2/unofficial-v0-api" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/v0.png" alt="v0" loading="lazy" style="max-height: 150px; object-fit: cover;">
+                </figure>
+
+                <h3 class="project-title">Unofficial V0 API</h3>
+
+                <p class="project-category">Unofficial API for V0</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item>
+              <a href="https://github.com/Kylejeong2/Github-Wrapped" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/github-wrapped.png" alt="github-wrapped" loading="lazy" style="max-height: 150px; object-fit: cover;">
+                </figure>
+
+                <h3 class="project-title">Github Wrapped</h3>
+
+                <p class="project-category">See your year on github</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item>
+              <a href="https://github.com/Kylejeong2/Twitter-CLI" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/twitter-cli.png" alt="twitter-cli" loading="lazy" style="max-height: 150px; object-fit: cover;">
+                </figure>
+
+                <h3 class="project-title">Twitter-CLI</h3>
+
+                <p class="project-category">Post on X from the CLI</p>
+
+              </a>
+            </li>
             <li class="project-item  active" data-filter-item>
               <a href="https://github.com/Kylejeong2/Talk-to-Overlap" target="_blank">
 
@@ -687,191 +785,18 @@
         </section>
       </article>
 
-
       <!--- #BLOG-->
-      <!-- <article class="blog" data-page="blog">
-
+      <article class="blog" data-page="blog">
         <header>
           <h2 class="h2 article-title">Blog</h2>
         </header>
 
         <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
+          <ul class="blog-posts-list" id="blog-list">
+            <!-- Blog posts will be dynamically loaded here -->
           </ul>
-
         </section>
-
-      </article> -->
+      </article>
 
       <!--- #CONTACT-->
 
